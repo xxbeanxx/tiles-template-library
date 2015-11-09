@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="master"/>
+
+	<definition name="wet-master" extends="master"/>
+
+	<definition name="scwasi-wet-master" extends="master"/>
+	
+	<definition name="gcwu-master" extends="wet-master">
+		<put-attribute name="metadata-tile" value="/wet-boew-template/gcwu-fegc-template/tiles/metadata.ftl" type="freemarker"/>
+
+		<put-attribute name="header-tile" value="/wet-boew-template/gcwu-fegc-template/tiles/header.ftl" type="freemarker"/>
+		<put-attribute name="sitetitle-tile" value="/wet-boew-template/gcwu-fegc-template/tiles/sitetitle.ftl" type="freemarker" cascade="true"/>
+		<put-attribute name="breadcrumb-tile" value="/wet-boew-template/gcwu-fegc-template/tiles/breadcrumb.ftl" type="freemarker" cascade="true" />
+		
+		<put-attribute name="contentheader-tile" value="/wet-boew-template/gcwu-fegc-template/tiles/contentheader.ftl" type="freemarker"/>
+		<put-attribute name="contentfooter-tile" value="/wet-boew-template/gcwu-fegc-template/tiles/contentfooter.ftl" type="freemarker"/>
+
+		<put-attribute name="secmenu-tile" value="/wet-boew-template/gcwu-fegc-template/tiles/secmenu.ftl" type="freemarker"/>
+		
+		<put-attribute name="footer-tile" value="/wet-boew-template/gcwu-fegc-template/tiles/footer.ftl" type="freemarker"/>
+	</definition>
+
+	<definition name="scwasi-gcwu-master" extends="wet-master">
+		<put-attribute name="header-tile" value="/scwasi-wet-boew-template/gcwu-fegc-template/tiles/header.ftl" type="freemarker"/>
+		<put-attribute name="breadcrumb-tile" value="/scwasi-wet-boew-template/gcwu-fegc-template/tiles/breadcrumb.ftl" type="freemarker" cascade="true"/>
+		<put-attribute name="footer-tile" value="/scwasi-wet-boew-template/gcwu-fegc-template/tiles/footer.ftl" type="freemarker"/>
+	</definition>
+	
+	<definition name="gcwu-content" extends="gcwu-master" template="/wet-boew-template/gcwu-fegc-template/layouts/content.ftl" templateType="freemarker"/>
+
+	<definition name="scwasi-gcwu-content" extends="scwasi-gcwu-master" template="/scwasi-wet-boew-template/gcwu-fegc-template/layouts/content.ftl" templateType="freemarker"/>
+	
+	<definition name="gcwu-content-secmenu" extends="gcwu-master" template="/wet-boew-template/gcwu-fegc-template/layouts/content-secmenu.ftl" templateType="freemarker"/>
+
+	<definition name="scwasi-gcwu-content-secmenu" extends="scwasi-gcwu-master" template="/scwasi-wet-boew-template/gcwu-fegc-template/layouts/content-secmenu.ftl" templateType="freemarker"/>
+	
+	<definition name="gcwu-servermessage" extends="gcwu-master" template="/wet-boew-template/gcwu-fegc-template/layouts/servermessage.ftl" templateType="freemarker"/>
+
+	<definition name="scwasi-gcwu-servermessage" extends="scwasi-gcwu-master" template="/scwasi-wet-boew-template/gcwu-fegc-template/layouts/servermessage.ftl" templateType="freemarker"/>
+
+</tiles-definitions>
