@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.xxbeanxx</groupId>
-	<artifactId>tiles-template-showcase</artifactId>
+	<artifactId>tiles-template-library</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<name>Packagable Tiles Templates</name>
 	<description>A sample application demonstrating strategies that can be used to encapsulate Apache Tiles templates as libraries.</description>
-	<url>https://github.com/xxbeanxx/tiles-template-showcase</url>
+	<url>https://github.com/xxbeanxx/tiles-template-library</url>
 
 	
 	<licenses>
@@ -18,15 +18,15 @@
 
 	
 	<issueManagement>
-		<url>https://github.com/xxbeanxx/tiles-template-showcase</url>
+		<url>https://github.com/xxbeanxx/tiles-template-library</url>
 		<system>GitHub Issue Tracker</system>
 	</issueManagement>
 
 
 	<scm>
-		<url>https://github.com/xxbeanxx/tiles-template-showcase</url>
-		<connection>scm:git:git://github.com/xxbeanxx/tiles-template-showcase.git</connection>
-		<developerConnection>scm:git:git@github.com:xxbeanxx/tiles-template-showcase.git</developerConnection>
+		<url>https://github.com/xxbeanxx/tiles-template-library</url>
+		<connection>scm:git:git://github.com/xxbeanxx/tiles-template-library.git</connection>
+		<developerConnection>scm:git:git@github.com:xxbeanxx/tiles-template-library.git</developerConnection>
 	</scm>
 
 
