@@ -7,16 +7,11 @@ import freemarker.template.TemplateModel;
 /**
  * @author gregory.j.baker
  */
-public class MessagesFactory implements SharedVariableFactory {
+public class LocaleInfoFactory implements SharedVariableFactory {
 
-	/**
-	 * TODO can this be configurable?
-	 */
-	private static final String BUNDLE_NAME = "/templates/gcwu-fegc";
-	
 	@Override
 	public TemplateModel create() {
-		return new MessagesModel(BUNDLE_NAME);
+		return new LocaleInfoModel();
 	}
 	
 }

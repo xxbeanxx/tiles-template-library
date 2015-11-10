@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js lt-ie9" lang="${.lang}" dir="ltr"><![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js" lang="${.lang}" dir="ltr"><!--<![endif]-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="${localeinfo['language']}" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="${localeinfo['language']}" dir="ltr"><!--<![endif]-->
 	<head>
 
 		<meta charset="utf-8">
@@ -15,18 +15,18 @@
 		<meta name="robots" content="noindex, nofollow, noarchive">
 
 		<!--[if gte IE 9 | !IE ]><!-->
-		<link href="${request.contextPath}/theme-gcwu-fegc/assets/favicon.ico" rel="icon" type="image/x-icon">
-		<link rel="stylesheet" href="${request.contextPath}/theme-gcwu-fegc/css/theme-srv.min.css">
+		<link href="${contextpath}/theme-gcwu-fegc/assets/favicon.ico" rel="icon" type="image/x-icon">
+		<link rel="stylesheet" href="${contextpath}/theme-gcwu-fegc/css/theme-srv.min.css">
 		<!--<![endif]-->
 
 		<!--[if lt IE 9]>
-		<link href="${request.contextPath}/theme-gcwu-fegc/assets/favicon.ico" rel="shortcut icon" />
-		<link rel="stylesheet" href="${request.contextPath}/theme-gcwu-fegc/css/ie8-theme-srv.min.css" />
-		<script src="${request.contextPath}/wet-boew/js/jquery/1.11.1/jquery.min.js"></script>
-		<script src="${request.contextPath}/wet-boew/js/ie8-wet-boew.min.js"></script>
+		<link href="${contextpath}/theme-gcwu-fegc/assets/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="${contextpath}/theme-gcwu-fegc/css/ie8-theme-srv.min.css" />
+		<script src="${contextpath}/wet-boew/js/jquery/1.11.1/jquery.min.js"></script>
+		<script src="${contextpath}/wet-boew/js/ie8-wet-boew.min.js"></script>
 		<![endif]-->
 
-		<noscript><link rel="stylesheet" href="${request.contextPath}/wet-boew/css/noscript.min.css" /></noscript>
+		<noscript><link rel="stylesheet" href="${contextpath}/wet-boew/css/noscript.min.css" /></noscript>
 	</head>
 
 	<body vocab="http://schema.org/" typeof="WebPage">
@@ -34,10 +34,10 @@
 			<div id="wb-bnr" class="row">
 				<div class="row">
 					<div class="col-sm-6">
-						<object id="gcwu-sig" type="image/svg+xml" tabindex="-1" role="img" data="${request.contextPath}/theme-gcwu-fegc/assets/sig-alt-en.svg" aria-label="Government of Canada"></object>
+						<object id="gcwu-sig" type="image/svg+xml" tabindex="-1" role="img" data="${contextpath}/theme-gcwu-fegc/assets/sig-alt-en.svg" aria-label="Government of Canada"></object>
 					</div>
 					<div class="col-sm-6">
-						<object id="wmms" type="image/svg+xml" tabindex="-1" role="img" data="${request.contextPath}/theme-gcwu-fegc/assets/wmms-alt.svg" aria-label="Symbol of the Government of Canada"></object>
+						<object id="wmms" type="image/svg+xml" tabindex="-1" role="img" data="${contextpath}/theme-gcwu-fegc/assets/wmms-alt.svg" aria-label="Symbol of the Government of Canada"></object>
 					</div>
 				</div>
 			</div>
@@ -60,14 +60,14 @@
 		</main>
 
 		<!--[if gte IE 9 | !IE ]><!-->
-		<script src="${request.contextPath}/wet-boew/js/jquery/2.1.4/jquery.js"></script>
-		<script src="${request.contextPath}/wet-boew/js/wet-boew.min.js"></script>
+		<script src="${contextpath}/wet-boew/js/jquery/2.1.4/jquery.js"></script>
+		<script src="${contextpath}/wet-boew/js/wet-boew.min.js"></script>
 		<!--<![endif]-->
 
 		<!--[if lt IE 9]>
-		<script src="${request.contextPath}/wet-boew/js/ie8-wet-boew2.min.js"></script>
+		<script src="${contextpath}/wet-boew/js/ie8-wet-boew2.min.js"></script>
 		<![endif]-->
 
-		<script src="${request.contextPath}/theme-gcwu-fegc/js/theme.min.js"></script>
+		<script src="${contextpath}/theme-gcwu-fegc/js/theme.min.js"></script>
 	</body>
 </html>

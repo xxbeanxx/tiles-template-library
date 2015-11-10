@@ -4,4 +4,4 @@
 <meta name="dcterms.issued" title="W3CDTF" content="Date published (YYYY-MM-DD) / Date de publication (AAAA-MM-JJ)">
 <meta name="dcterms.modified" title="W3CDTF" content="Date modified (YYYY-MM-DD) / Date de modification (AAAA-MM-JJ)">
 <meta name="dcterms.subject" title="scheme" content="French subject terms / Termes de sujet en français">
-<meta name="dcterms.language" title="ISO639-2" content="${request.locale.ISO3Language}">
+<meta name="dcterms.language" title="ISO639-2" content="${localeinfo['iso3language']}">

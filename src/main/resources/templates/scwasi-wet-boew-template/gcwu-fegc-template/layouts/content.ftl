@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js lt-ie9" lang="${.lang}" dir="ltr"><![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js" lang="${.lang}" dir="ltr"><!--<![endif]-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="${localeinfo['language']}" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="${localeinfo['language']}" dir="ltr"><!--<![endif]-->
 	<head>
 		
 		<meta charset="utf-8">
@@ -18,7 +18,7 @@
 		<meta name="dcterms.issued" title="W3CDTF" content="Date published (YYYY-MM-DD) / Date de publication (AAAA-MM-JJ)">
 		<meta name="dcterms.modified" title="W3CDTF" content="Date modified (YYYY-MM-DD) / Date de modification (AAAA-MM-JJ)">
 		<meta name="dcterms.subject" title="scheme" content="French subject terms / Termes de sujet en français">
-		<meta name="dcterms.language" title="ISO639-2" content="${.locale_object.ISO3Language}">
+		<meta name="dctermslocaleinfo['language']uage" title="ISO639-2" content="${localeinfo['iso3language']}">
 
 		<#-- load closure template scripts -->
 		<script type="text/javascript" src="http://templates.services.gc.ca/app/cls/WET/utweb/v4_0_17/js/compiled/soyutils.js"></script>

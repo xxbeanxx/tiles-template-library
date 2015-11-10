@@ -53,7 +53,9 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.util.ClassUtils;
 import org.springframework.web.context.ServletContextAware;
 
+import com.github.xxbeanxx.tiles.freemarker.ContextPathFactory;
 import com.github.xxbeanxx.tiles.freemarker.FreemarkerRendererBuilder;
+import com.github.xxbeanxx.tiles.freemarker.LocaleInfoFactory;
 import com.github.xxbeanxx.tiles.freemarker.MessagesFactory;
 
 /**
@@ -320,9 +322,6 @@ public class TilesConfigurer implements ServletContextAware, InitializingBean, D
 		protected void registerAttributeRenderers(BasicRendererFactory rendererFactory, ApplicationContext applicationContext, TilesContainer container, AttributeEvaluatorFactory attributeEvaluatorFactory) {
 			super.registerAttributeRenderers(rendererFactory, applicationContext, container, attributeEvaluatorFactory);
 
-			final String tilesFactory = "tiles," + TilesSharedVariableFactory.class.getName();
-			final String messagesFactory = "messages," + MessagesFactory.class.getName();
-
 			// TODO make this configurable
 			final FreemarkerRendererBuilder rendererBuilder = FreemarkerRendererBuilder.createInstance();
 			rendererBuilder.setApplicationContext(applicationContext);
@@ -331,7 +330,12 @@ public class TilesConfigurer implements ServletContextAware, InitializingBean, D
 			rendererBuilder.setParameter("default_encoding", "UTF-8");
 			rendererBuilder.setParameter("template_exception_handler", "html_debug");
 			rendererBuilder.setParameter("template_update_delay", "0");
-			rendererBuilder.setParameter(SharedVariableLoaderFreemarkerServlet.CUSTOM_SHARED_VARIABLE_FACTORIES_INIT_PARAM, tilesFactory + ";" + messagesFactory);
+			rendererBuilder.setParameter(
+					SharedVariableLoaderFreemarkerServlet.CUSTOM_SHARED_VARIABLE_FACTORIES_INIT_PARAM,
+					"contextpath," + ContextPathFactory.class.getName() + ";" +
+					"localeinfo," + LocaleInfoFactory.class.getName() + ";" +
+					"messages," + MessagesFactory.class.getName() + ";" +
+					"tiles," + TilesSharedVariableFactory.class.getName());
 
 			rendererFactory.registerRenderer("freemarker", rendererBuilder.build());
 		}
