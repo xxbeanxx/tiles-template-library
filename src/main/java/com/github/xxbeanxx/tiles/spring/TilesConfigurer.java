@@ -322,7 +322,12 @@ public class TilesConfigurer implements ServletContextAware, InitializingBean, D
 		protected void registerAttributeRenderers(BasicRendererFactory rendererFactory, ApplicationContext applicationContext, TilesContainer container, AttributeEvaluatorFactory attributeEvaluatorFactory) {
 			super.registerAttributeRenderers(rendererFactory, applicationContext, container, attributeEvaluatorFactory);
 
-			// TODO make this configurable
+			/* TODO devise a better shared variable strategy
+			 *
+			 *      this will require overriding behaviour in tiles'
+			 *      SharedVariableLoaderFreemarkerServlet class to
+			 *      acquire the factories from the spring context
+			 */ 
 			final FreemarkerRendererBuilder rendererBuilder = FreemarkerRendererBuilder.createInstance();
 			rendererBuilder.setApplicationContext(applicationContext);
 			rendererBuilder.setParameter("NoCache", "true");
