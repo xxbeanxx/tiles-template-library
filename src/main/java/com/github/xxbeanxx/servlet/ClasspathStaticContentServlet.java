@@ -199,7 +199,7 @@ public class ClasspathStaticContentServlet extends HttpServlet {
 			response.setContentType(contentType);
 		}
 		else {
-			response.setContentType("text/html");
+			response.setContentType("text/plain");
 		}
 
 		response.setCharacterEncoding(this.encoding);
