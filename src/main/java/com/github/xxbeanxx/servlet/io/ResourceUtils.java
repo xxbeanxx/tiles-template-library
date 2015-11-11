@@ -31,6 +31,7 @@ public class ResourceUtils {
 		addMimeType("application/dsptype", "tsp");
 		addMimeType("application/futuresplash", "spl");
 		addMimeType("application/hta", "hta");
+		addMimeType("application/javascript", "js");
 		addMimeType("application/mac-binhex40", "hqx");
 		addMimeType("application/mac-compactpro", "cpt");
 		addMimeType("application/mathematica", "nb");

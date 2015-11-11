@@ -198,6 +198,11 @@ public class ClasspathStaticContentServlet extends HttpServlet {
 		if (contentType != null) {
 			response.setContentType(contentType);
 		}
+		else {
+			response.setContentType("text/html");
+		}
+
+		response.setCharacterEncoding(this.encoding);
 
 		if (disableBrowserCache == true) {
 			LOGGER.debug("Init-param disableBrowserCache is set to true, adding no-cache headers");
