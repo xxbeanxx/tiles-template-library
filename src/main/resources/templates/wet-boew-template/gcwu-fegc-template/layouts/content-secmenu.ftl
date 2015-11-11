@@ -15,18 +15,18 @@
 		<@tiles.insertAttribute name="metadata-tile"/>
 
 		<!--[if gte IE 9 | !IE ]><!-->
-		<link href="${contextpath}/resource/theme-gcwu-fegc/assets/favicon.ico" rel="icon" type="image/x-icon">
-		<link rel="stylesheet" href="${contextpath}/resource/theme-gcwu-fegc/css/theme.min.css">
+		<link href="${contextpath}/resources/theme-gcwu-fegc/assets/favicon.ico" rel="icon" type="image/x-icon">
+		<link rel="stylesheet" href="${contextpath}/resources/theme-gcwu-fegc/css/theme.min.css">
 		<!--<![endif]-->
 
 		<!--[if lt IE 9]>
-		<link href="${contextpath}/resource/theme-gcwu-fegc/assets/favicon.ico" rel="shortcut icon" />
-		<link rel="stylesheet" href="${contextpath}/resource/theme-gcwu-fegc/css/ie8-theme.min.css" />
-		<script src="${contextpath}/resource/wet-boew/js/jquery/1.11.1/jquery.min.js"></script>
-		<script src="${contextpath}/resource/wet-boew/js/ie8-wet-boew.min.js"></script>
+		<link href="${contextpath}/resources/theme-gcwu-fegc/assets/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="${contextpath}/resources/theme-gcwu-fegc/css/ie8-theme.min.css" />
+		<script src="${contextpath}/resources/wet-boew/js/jquery/1.11.1/jquery.min.js"></script>
+		<script src="${contextpath}/resources/wet-boew/js/ie8-wet-boew.min.js"></script>
 		<![endif]-->
 
-		<noscript><link rel="stylesheet" href="${contextpath}/resource/wet-boew/css/noscript.min.css" /></noscript>
+		<noscript><link rel="stylesheet" href="${contextpath}/resources/wet-boew/css/noscript.min.css" /></noscript>
 	</head>
 
 	<body vocab="http://schema.org/" typeof="WebPage">
@@ -55,14 +55,14 @@
 		<@tiles.insertAttribute name="footer-tile"/>
 		
 		<!--[if gte IE 9 | !IE ]><!-->
-		<script src="${contextpath}/resource/wet-boew/js/jquery/2.1.4/jquery.js"></script>
-		<script src="${contextpath}/resource/wet-boew/js/wet-boew.min.js"></script>
+		<script src="${contextpath}/resources/wet-boew/js/jquery/2.1.4/jquery.js"></script>
+		<script src="${contextpath}/resources/wet-boew/js/wet-boew.min.js"></script>
 		<!--<![endif]-->
 		
 		<!--[if lt IE 9]>
-		<script src="${contextpath}/resource/wet-boew/js/ie8-wet-boew2.min.js"></script>
+		<script src="${contextpath}/resources/wet-boew/js/ie8-wet-boew2.min.js"></script>
 		<![endif]-->
 
-		<script src="${contextpath}/resource/theme-gcwu-fegc/js/theme.min.js"></script>
+		<script src="${contextpath}/resources/theme-gcwu-fegc/js/theme.min.js"></script>
 	</body>
 </html>

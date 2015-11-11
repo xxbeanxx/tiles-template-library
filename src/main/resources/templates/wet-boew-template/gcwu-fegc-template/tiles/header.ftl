@@ -3,7 +3,7 @@
 		<div id="wb-bar">
 			<div class="container">
 				<div class="row">
-					<object id="gcwu-sig" type="image/svg+xml" tabindex="-1" role="img" data="${contextpath}/resource/theme-gcwu-fegc/assets/sig-en.svg" aria-label="Government of Canada"></object>
+					<object id="gcwu-sig" type="image/svg+xml" tabindex="-1" role="img" data="${contextpath}/resources/theme-gcwu-fegc/assets/sig-en.svg" aria-label="Government of Canada"></object>
 					<ul id="gc-bar" class="list-inline">
 						<li><a href="http://www.canada.ca/en/index.html" rel="external">Canada.ca</a></li>
 						<li><a href="http://www.canada.ca/en/services/index.html" rel="external">Services</a></li>
@@ -30,11 +30,11 @@
 				<div id="wb-sttl" class="col-md-5">
 					<@tiles.insertAttribute name="sitetitle-tile"/>
 				</div>
-				<object id="wmms" type="image/svg+xml" tabindex="-1" role="img" data="${contextpath}/resource/theme-gcwu-fegc/assets/wmms.svg" aria-label="Symbol of the Government of Canada"></object>
+				<object id="wmms" type="image/svg+xml" tabindex="-1" role="img" data="${contextpath}/resources/theme-gcwu-fegc/assets/wmms.svg" aria-label="Symbol of the Government of Canada"></object>
 			</div>
 		</div>
 	</div>
-	<nav role="navigation" id="wb-sm" data-ajax-replace="${contextpath}/resource/ajax/sitemenu-en.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+	<nav role="navigation" id="wb-sm" data-ajax-replace="${contextpath}/resources/ajax/sitemenu-en.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
 		<div class="container nvbar">
 			<h2>Topics menu</h2>
 			<div class="row">
